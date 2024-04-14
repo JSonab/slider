@@ -1,0 +1,163 @@
+body{
+	background-color: rgb(19, 19, 19);
+	display: flex;
+	justify-content: center;
+	padding-top: 13vh;
+}
+
+#inline{
+	display: flex;
+	flex-direction: row;
+}
+.main{
+	display: flex;
+	flex-direction: row;
+	width: 81.3vw;
+	height: 70.7vh;
+}
+.first-column {
+	display: column;
+	margin-top: 3%;
+
+}
+.row-text {
+	text-align: left;
+}
+.row-text__title {
+	color: rgb(227, 184, 115);
+	font-family: Yeseva One;
+	font-size: 27px;
+	font-weight: 400;
+	line-height: 1.2;
+	width: 40%;
+}
+.row-text__lines {
+	color: rgb(255, 255, 255);
+	font-family: Nunito Sans;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 2;
+	width: 32em;
+}
+.twocolumns {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	flex-wrap: wrap;
+	max-height: 40%;
+	margin-top:  5%;
+}
+.description {
+}
+.discription__subtitle {
+	color: rgb(227, 184, 115);
+	font-family: Yeseva One;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.2;
+}
+.description__text {
+	color: rgb(255, 255, 255);
+	font-family: Nunito Sans;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1.3;
+}
+.switch {
+	margin-top: 12.8%;
+
+}
+.left:hover,
+.right:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.right{
+	margin-left: 4%;
+}
+
+.switch__point {
+	padding-left: 4%;
+}
+
+.switch__point:active,
+.switch__point:hover{
+	background-image:url(images/switch/point.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.second-column {
+	display: column;
+	margin-left: auto;
+}
+
+.nav {
+	margin-bottom: 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-right: 56px;
+}
+
+.nav__link {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.3);
+	font-family: Yeseva One;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.nav__link:active,
+.nav__link:hover{
+	color: rgb(227, 184, 115);
+	text-decoration: underline;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.big-images {
+	display: flex;
+	flex-direction: column;
+}
+
+.big-image{
+	display: none;
+}
+
+.big-image.active{
+	display: block;
+}
+
+.switch__point .active-link{
+	background-image:url(images/switch/point.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+	transform: scale(1.2);
+	opacity: 2;
+}
+
+.big-image .active{
+	display: block;
+}
+
+.third,
+.second,
+.first  {
+	width: 80vh;
+	height: 60vh;
+}
+
+.nav__link .active{
+	color: rgb(227, 184, 115);
+	text-decoration: underline;
+}
+
+.slider-button .active{
+	background-image:url(images/switch/point.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+}

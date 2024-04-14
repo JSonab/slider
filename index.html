@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="sliderc.css">
+	<title>Slider</title>
+</head>
+<body>
+	<main class="main">
+	<section class="first-column">
+		<div class="row-text">
+			<div id="inline">
+				<h1 class="row-text__title">COMPLETED PROJECTS</h1>
+				<img src="images/palochka.svg">
+			</div>
+			<p class="row-text__lines">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction
+market we have made happy more than 1000 families</p>
+		</div>
+		<div class="twocolumns">
+			<div class="description">
+				<h2 class="discription__subtitle">CITY</h2>
+				<p class="description__text">Rostov-on-Don</p>
+				<p class="description__text">LCD admiral</p>
+			</div>
+			<div class="description">
+				<h2 class="discription__subtitle">APARTMENT AREA</h2>
+				<p class="description__text">81 m2</p>
+			</div>
+			<div class="description">
+				<h2 class="discription__subtitle">REPAIR TIME</h2>
+				<p class="description__text">3.5 months</p>
+			</div>
+			<div class="description">
+				<h2 class="discription__subtitle">REPAIR COST</h2>
+				<p class="description__text">Upon request</p>
+			</div>
+		</div>
+		<div class="switch">
+			<img src="images/switch/arrowLeft.svg" alt="switch" class="switch__arrow left" onclick="prevSlide()">
+			<img src="images/switch/pointGrey.svg" alt="switch" class="switch__point slider-button" onclick="showSlide(1)">
+			<img src="images/switch/pointGrey.svg" alt="switch" class="switch__point slider-button" onclick="showSlide(2)">
+			<img src="images/switch/pointGrey.svg" alt="switch" class="switch__point slider-button" onclick="showSlide(3)">
+			<img src="images/switch/right.svg" alt="switch" class="switch__arrow right" onclick="nextSlide()">
+		</div>
+	</section>
+<section class="second-column">
+	<nav class="nav">
+		<a href="#" class="nav__link" onclick="showSlide(1)">ROSTOV-ON-DON, ADMIRAL</a>
+		<a href="#" class="nav__link" onclick="showSlide(2)">SOCHI THIEVES</a>
+		<a href="#" class="nav__link" onclick="showSlide(3)">ROSTOV-ON-DON PATRIOTIC</a>
+	</nav>
+	<div class="big-images">
+		<img src="images/bigImg/first.png" alt="example repair" class="big-image first active">
+		<img src="images/bigImg/second.png" alt="example repair" class="big-image second">
+		<img src="images/bigImg/third.png" alt="example repair" class="big-image third">
+	</div>
+</section>
+</main>
+<script src="sliderj.js"></script>
+</body>
+</html>
